@@ -1,0 +1,50 @@
+hr {
+  margin: 40px 0;
+}
+
+h6 {
+  margin: 20px 0 0;
+}
+
+.page-wrapper.with-sidebar > .content-wrapper {
+  left: 260px;
+  width: calc(100% - 260px);
+  padding: 20px;
+}
+
+.charts .chart-column {
+  height: 250px;
+}
+
+.chart-container-sm-width {
+  height: 250px;
+  width: 450px;
+}
+
+.chart-container-sm {
+  height: 250px;
+}
+
+.chart-container-md {
+  height: 300px;
+}
+
+.chart-container-lg {
+  height: 500px;
+}
+
+.rc-slider-dot-active {
+  border-color: #1D6AF0 !important;
+}
+
+.rc-slider-track {
+  background-color: #1D6AF0 !important;
+}
+
+.rc-slider-rail {
+  background-color: rgba(0,0,0,.2) !important;
+}
+
+.rc-slider-handle {
+  border: solid 2px #1D6AF0 !important;
+}
