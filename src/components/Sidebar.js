@@ -9,13 +9,13 @@ const colors = require('./charts/ChartColors.js');
 
 const themeOptions = [
   {
-    value: 'theme1',
-    label: 'Example Light Theme',
+    value: 'lightTheme',
+    label: 'Light Theme',
     palettes: {
-      qualitative: colors.theme1.qualitativeLight,
-      sequential: colors.theme1.sequentialBlue,
-      diverging: colors.theme1.diverging,
-      semantic: colors.theme1.semantic
+      qualitative: colors.lightTheme.qualitative,
+      sequential: colors.lightTheme.sequentialBlue,
+      diverging: colors.lightTheme.diverging,
+      semantic: colors.lightTheme.semantic
     },
     pageSettings: {
       backgroundColor: "#FFFFFF",
@@ -23,16 +23,16 @@ const themeOptions = [
     }
   },
   {
-    value: 'theme2',
-    label: 'Example Dark Theme',
+    value: 'darkTheme',
+    label: 'Dark Theme',
     palettes: {
-      qualitative: colors.theme2.qualitativeDark,
-      sequential: colors.theme2.sequentialPurple,
-      diverging: colors.theme2.diverging,
-      semantic: colors.theme2.semantic
+      qualitative: colors.darkTheme.qualitative,
+      sequential: colors.darkTheme.sequentialPurple,
+      diverging: colors.darkTheme.diverging,
+      semantic: colors.darkTheme.semantic
     },
     pageSettings: {
-      backgroundColor: "#000000",
+      backgroundColor: "#121212",
       textColor: "#FFFFFF",
     }
   },

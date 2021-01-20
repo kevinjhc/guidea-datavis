@@ -22,12 +22,12 @@ class App extends Component {
       backgroundColor: '#ffffff',
       textColor: '#000000',
       seriesScale: 3,
-      theme: "theme1",
+      theme: "lightTheme",
       palettes: {
-        qualitative: colors.theme1.qualitativeLight,
-        sequential: colors.theme1.sequentialBlue,
-        diverging: colors.theme1.diverging,
-        semantic: colors.theme1.semantic
+        qualitative: colors.lightTheme.qualitative,
+        sequential: colors.lightTheme.sequentialBlue,
+        diverging: colors.lightTheme.diverging,
+        semantic: colors.lightTheme.semantic
       },
     };
 
