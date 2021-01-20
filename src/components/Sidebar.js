@@ -27,7 +27,7 @@ const themeOptions = [
     label: 'Dark Theme',
     palettes: {
       qualitative: colors.darkTheme.qualitative,
-      sequential: colors.darkTheme.sequentialPurple,
+      sequential: colors.darkTheme.sequentialBlue,
       diverging: colors.darkTheme.diverging,
       semantic: colors.darkTheme.semantic
     },
