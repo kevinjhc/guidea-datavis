@@ -585,12 +585,37 @@ class ScatterplotChart extends Component {
 
   render() {
     let displayData;
+    let colorScale = [];
     if (this.state.seriesScale === 1) {
       displayData = data.slice(0, 1);
+
+      colorScale = this.props.colorScale;
+
     } else if (this.state.seriesScale === 3) {
       displayData = data.slice(0, 3);
+
+      // Only pick certain colors if it's the divergent scale
+      if (this.props.colorScale.length == 14) {
+        colorScale.push(this.props.colorScale[0]);
+        colorScale.push(this.props.colorScale[8]);
+        colorScale.push(this.props.colorScale[13]);
+      } else {
+        colorScale = this.props.colorScale;
+      }
     } else if (this.state.seriesScale === 5) {
       displayData = data;
+
+      // Only pick certain colors if it's the divergent scale
+      if (this.props.colorScale.length == 14) {
+        colorScale.push(this.props.colorScale[0]);
+        colorScale.push(this.props.colorScale[3]);
+        colorScale.push(this.props.colorScale[5]);
+        colorScale.push(this.props.colorScale[8])
+        colorScale.push(this.props.colorScale[9]);
+        colorScale.push(this.props.colorScale[13]);
+      } else {
+        colorScale = this.props.colorScale;
+      }
     }
 
     return (
@@ -603,7 +628,7 @@ class ScatterplotChart extends Component {
         yScale={{ type: 'linear', min: 0, max: 'auto' }}
         yFormat={function(e){return e+" cm"}}
         // colors={colors[this.state.colorScale]}
-        colors={this.state.colorScale}
+        colors={colorScale}
         blendMode="multiply"
         axisTop={null}
         axisRight={null}

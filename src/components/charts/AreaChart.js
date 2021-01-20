@@ -215,7 +215,7 @@ class AreaChart extends Component {
       data={displayData}
       margin={{ top: 20, right: 110, bottom: 50, left: 60 }}
       xScale={{ type: 'point' }}
-      yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: true, reverse: false }}
+      yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: false, reverse: false }}
       yFormat=" >-.2f"
       // colors={colors[this.state.colorScale]}
       colors={this.state.colorScale}

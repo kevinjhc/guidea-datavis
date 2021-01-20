@@ -111,7 +111,7 @@ class GroupedBarChart extends Component {
 
     } else if (this.state.seriesScale === 5) {
       truncatedData = data;
-      keys = [ "Category", "Category 2", "Category 3", "Category 4", "Category 5", "Category 6" ];
+      keys = [ "Category", "Category 2", "Category 3", "Category 4", "Category 5" ];
     }
 
     return (

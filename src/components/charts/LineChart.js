@@ -96,27 +96,27 @@ let data = [
     "data": [
       {
         "x": "1",
-        "y": 47
+        "y": 37
       },
       {
         "x": "2",
-        "y": 276
+        "y": 56
       },
       {
         "x": "3",
-        "y": 8
+        "y": 93
       },
       {
         "x": "4",
-        "y": 156
+        "y": 123
       },
       {
         "x": "5",
-        "y": 174
+        "y": 34
       },
       {
         "x": "6",
-        "y": 284
+        "y": 74
       },
     ]
   },
@@ -125,27 +125,27 @@ let data = [
     "data": [
       {
         "x": "1",
-        "y": 47
+        "y": 11
       },
       {
         "x": "2",
-        "y": 276
+        "y": 69
       },
       {
         "x": "3",
-        "y": 8
+        "y": 24
       },
       {
         "x": "4",
-        "y": 156
+        "y": 211
       },
       {
         "x": "5",
-        "y": 174
+        "y": 123
       },
       {
         "x": "6",
-        "y": 284
+        "y": 34
       },
     ]
   },
@@ -154,15 +154,190 @@ let data = [
     "data": [
       {
         "x": "1",
-        "y": 47
+        "y": 213
       },
       {
         "x": "2",
-        "y": 276
+        "y": 172
       },
       {
         "x": "3",
-        "y": 8
+        "y": 42
+      },
+      {
+        "x": "4",
+        "y": 235
+      },
+      {
+        "x": "5",
+        "y": 23
+      },
+      {
+        "x": "6",
+        "y": 45
+      },
+    ]
+  },
+
+  {
+    "id": "Category 7",
+    "data": [
+      {
+        "x": "1",
+        "y": 107
+      },
+      {
+        "x": "2",
+        "y": 76
+      },
+      {
+        "x": "3",
+        "y": 38
+      },
+      {
+        "x": "4",
+        "y": 56
+      },
+      {
+        "x": "5",
+        "y": 14
+      },
+      {
+        "x": "6",
+        "y": 84
+      },
+    ]
+  },
+  {
+    "id": "Category 8",
+    "data": [
+      {
+        "x": "1",
+        "y": 33
+      },
+      {
+        "x": "2",
+        "y": 55
+      },
+      {
+        "x": "3",
+        "y": 11
+      },
+      {
+        "x": "4",
+        "y": 76
+      },
+      {
+        "x": "5",
+        "y": 42
+      },
+      {
+        "x": "6",
+        "y": 34
+      },
+    ]
+  },
+  {
+    "id": "Category 9",
+    "data": [
+      {
+        "x": "1",
+        "y": 40
+      },
+      {
+        "x": "2",
+        "y": 75
+      },
+      {
+        "x": "3",
+        "y": 219
+      },
+      {
+        "x": "4",
+        "y": 44
+      },
+      {
+        "x": "5",
+        "y": 55
+      },
+      {
+        "x": "6",
+        "y": 11
+      },
+    ]
+  },
+  {
+    "id": "Category 10",
+    "data": [
+      {
+        "x": "1",
+        "y": 42
+      },
+      {
+        "x": "2",
+        "y": 115
+      },
+      {
+        "x": "3",
+        "y": 33
+      },
+      {
+        "x": "4",
+        "y": 67
+      },
+      {
+        "x": "5",
+        "y": 67
+      },
+      {
+        "x": "6",
+        "y": 177
+      },
+    ]
+  },
+  {
+    "id": "Category 11",
+    "data": [
+      {
+        "x": "1",
+        "y": 27
+      },
+      {
+        "x": "2",
+        "y": 224
+      },
+      {
+        "x": "3",
+        "y": 14
+      },
+      {
+        "x": "4",
+        "y": 42
+      },
+      {
+        "x": "5",
+        "y": 53
+      },
+      {
+        "x": "6",
+        "y": 35
+      },
+    ]
+  },
+  {
+    "id": "Category 12",
+    "data": [
+      {
+        "x": "1",
+        "y": 147
+      },
+      {
+        "x": "2",
+        "y": 76
+      },
+      {
+        "x": "3",
+        "y": 83
       },
       {
         "x": "4",
@@ -170,11 +345,11 @@ let data = [
       },
       {
         "x": "5",
-        "y": 174
+        "y": 14
       },
       {
         "x": "6",
-        "y": 284
+        "y": 233
       },
     ]
   },
@@ -206,6 +381,8 @@ class LineChart extends Component {
     } else if (this.state.seriesScale === 3) {
       displayData = data.slice(0, 3);
     } else if (this.state.seriesScale === 5) {
+      displayData = data.slice(0, 5);
+    } else if (this.state.seriesScale === 12) {
       displayData = data;
     }
 
@@ -216,7 +393,7 @@ class LineChart extends Component {
         data={displayData}
         margin={{ top: 20, right: 110, bottom: 50, left: 60 }}
         xScale={{ type: 'point' }}
-        yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: true, reverse: false }}
+        yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: false, reverse: false }}
         yFormat=" >-.2f"
         // colors={colors[this.state.colorScale]}
         colors={this.state.colorScale}

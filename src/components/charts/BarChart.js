@@ -60,7 +60,7 @@ class BarChart extends Component {
       keys = ["1", "2", "3"];
     } else if (this.state.seriesScale === 5) {
       displayData = data;
-      keys = ["1", "2", "3", "4", "5", "6"];
+      keys = ["1", "2", "3", "4", "5"];
     }
 
     return (

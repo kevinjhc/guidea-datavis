@@ -85,6 +85,16 @@ class App extends Component {
               <div class="charts container">
 
                 <div className="row">
+                  <div className="color chart-column col-12" style={{height: "330px"}}>
+                    <LineChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative}
+                      seriesScale={12} />
+                  </div>
+                </div>
+
+                <div className="row">
                   <div className="color chart-column col-12 col-lg-6 col-xl-4">
                     <BarChart
                       key={this.state.textColor}
@@ -101,7 +111,7 @@ class App extends Component {
                       seriesScale={this.state.seriesScale} />
                   </div>
 
-                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                  <div className="color chart-column col-12 col-lg-12 col-xl-4">
                     <GroupedBarChart
                       key={this.state.textColor}
                       textColor={this.state.textColor}
@@ -127,7 +137,7 @@ class App extends Component {
                       seriesScale={this.state.seriesScale} />
                   </div>
 
-                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                  <div className="color chart-column col-12 col-lg-12 col-xl-4">
                     <ScatterPlotChart
                       key={this.state.textColor}
                       textColor={this.state.textColor}
@@ -137,7 +147,7 @@ class App extends Component {
                 </div>
 
                 <div className="row">
-                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                  <div className="color chart-column col-12 col-lg-12 col-xl-6">
                     <PieChart
                       key={this.state.textColor}
                       textColor={this.state.textColor}
@@ -145,7 +155,7 @@ class App extends Component {
                       seriesScale={this.state.seriesScale} />
                   </div>
 
-                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                  <div className="color chart-column col-12 col-lg-12 col-xl-6">
                     <RadarChart
                       key={this.state.textColor}
                       textColor={this.state.textColor}
@@ -168,39 +178,13 @@ class App extends Component {
               <div class="charts container">
 
                 <div className="row">
-                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
-                    <StackedBarChart
-                      key={this.state.textColor}
-                      textColor={this.state.textColor}
-                      colorScale={this.state.palettes.sequential}
-                      seriesScale={this.state.seriesScale} />
-                  </div>
 
-                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
-                    <GroupedBarChart
-                      key={this.state.textColor}
-                      textColor={this.state.textColor}
-                      colorScale={this.state.palettes.sequential}
-                      seriesScale={this.state.seriesScale} />
-                  </div>
-
-                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                  <div className="color chart-column col-12" style={{height: "330px"}}>
                     <HeatmapChart
                       key={this.state.textColor}
                       textColor={this.state.textColor}
                       colorScale={this.state.palettes.sequential} />
                   </div>
-                </div>
-
-                <div className="row">
-                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
-                    <PieChart
-                      key={this.state.textColor}
-                      textColor={this.state.textColor}
-                      colorScale={this.state.palettes.sequential}
-                      seriesScale={this.state.seriesScale} />
-                  </div>
-
                 </div>
 
               </div>
@@ -216,14 +200,14 @@ class App extends Component {
               <div class="charts container">
 
                 <div className="row">
-                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                  <div className="color chart-column col-12" style={{height: "330px"}}>
                     <HeatmapChart
                       key={this.state.textColor}
                       textColor={this.state.textColor}
                       colorScale={this.state.palettes.diverging} />
                   </div>
 
-                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                  <div className="color chart-column col-12">
                     <ScatterPlotChart
                       key={this.state.textColor}
                       textColor={this.state.textColor}
@@ -245,45 +229,23 @@ class App extends Component {
               <div class="charts container">
 
               <div className="row">
-                <div className="color chart-column col-12 col-lg-6 col-xl-4">
-                  <BarChart
-                    key={this.state.textColor}
-                    textColor={this.state.textColor}
-                    colorScale={this.state.palettes.semantic}
-                    seriesScale={this.state.seriesScale} />
-                </div>
 
-                <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                <div className="color chart-column col-12">
                   <StackedBarChart
                     key={this.state.textColor}
                     textColor={this.state.textColor}
                     colorScale={this.state.palettes.semantic}
-                    seriesScale={this.state.seriesScale} />
+                    seriesScale={4} />
                 </div>
 
-                <div className="color chart-column col-12 col-lg-6 col-xl-4">
-                  <GroupedBarChart
-                    key={this.state.textColor}
-                    textColor={this.state.textColor}
-                    colorScale={this.state.palettes.semantic}
-                    seriesScale={this.state.seriesScale} />
-                </div>
               </div>
 
               <div className="row">
-                <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                <div className="color chart-column col-12" style={{height: "330px"}}>
                   <HeatmapChart
                     key={this.state.textColor}
                     textColor={this.state.textColor}
                     colorScale={this.state.palettes.semantic} />
-                </div>
-
-                <div className="color chart-column col-12 col-lg-6 col-xl-4">
-                <PieChart
-                  key={this.state.textColor}
-                  textColor={this.state.textColor}
-                  colorScale={this.state.palettes.semantic}
-                  seriesScale={this.state.seriesScale} />
                 </div>
               </div>
 

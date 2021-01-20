@@ -1,11 +1,30 @@
-Customization
--- Better colors for complex graphs
--- Re-order colors
+Qualitative
+- Updated Light qualitative palette colors
+- Updated Light qualitative palette colors
+- Add a full-width, 12 series line chart
+- Made the scatterplot wider on smaller screens
 
-Chart Types
--- Funnel
--- Sparklines (qual or semantic)
--- Candlestick / Box plot (qual)
--- Map (bubbles)
--- Treemap
--- Choropleth
+Sequential
+- Updated Light sequential palette colors
+- Removed stacked bar chart
+- Removed grouped bar chart
+- Removed pie chart
+- Made the heatmap wider and taller
+
+Diverging
+- Updated Light diverging palette colors
+- Made the scatterplot and heatmap wider
+- The scatterplot shows colors from both ends of the spectrum
+
+Semantic
+- Updated Light semantic palette so that it's 4 colors instead of 5
+- Updated Dark semantic palette
+- Charts now always show all 4 colors
+- Removed grouped bar chart
+- Removed pie chart
+- Removed bar chart
+- Made the heatmap wider and taller
+
+Not done yet / need clarity
+- Dark sequential palette has NOT been updated yet
+- Dark diverging palette has NOT been updated yet

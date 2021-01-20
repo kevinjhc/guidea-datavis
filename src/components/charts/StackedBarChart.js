@@ -110,9 +110,23 @@ class StackedBarChart extends Component {
       }
       keys = [ "Category", "Category 2", "Category 3" ];
 
+    } else if (this.state.seriesScale === 4) {
+      displayData = data;
+
+      for (var i = 0; i < displayData.length; i++){
+        var obj = {}
+        obj["id"] = i;
+        obj["Category"] = displayData[i]["Category"];
+        obj["Category 2"] = displayData[i]["Category 2"];
+        obj["Category 3"] = displayData[i]["Category 3"];
+        obj["Category 4"] = displayData[i]["Category 4"];
+        truncatedData.push(obj);
+      }
+      keys = [ "Category", "Category 2", "Category 3", "Category 4" ];
+
     } else if (this.state.seriesScale === 5) {
       truncatedData = data;
-      keys = [ "Category", "Category 2", "Category 3", "Category 4", "Category 5", "Category 6" ];
+      keys = [ "Category", "Category 2", "Category 3", "Category 4", "Category 5" ];
     }
 
     return (
