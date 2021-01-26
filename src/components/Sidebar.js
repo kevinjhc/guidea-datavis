@@ -13,8 +13,10 @@ const themeOptions = [
     label: 'Light Theme',
     palettes: {
       qualitative: colors.lightTheme.qualitative,
-      sequential: colors.lightTheme.sequentialBlue,
+      sequential: colors.lightTheme.sequential,
+      sequential2: colors.lightTheme.sequential2,
       diverging: colors.lightTheme.diverging,
+      diverging2: colors.lightTheme.diverging2,
       semantic: colors.lightTheme.semantic
     },
     pageSettings: {
@@ -27,8 +29,10 @@ const themeOptions = [
     label: 'Dark Theme',
     palettes: {
       qualitative: colors.darkTheme.qualitative,
-      sequential: colors.darkTheme.sequentialBlue,
+      sequential: colors.darkTheme.sequential,
+      sequential2: colors.darkTheme.sequential2,
       diverging: colors.darkTheme.diverging,
+      diverging2: colors.darkTheme.diverging2,
       semantic: colors.darkTheme.semantic
     },
     pageSettings: {
