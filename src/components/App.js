@@ -88,11 +88,19 @@ class App extends Component {
 
                 <div className="row">
                   <div className="color chart-column col-12" style={{height: "330px"}}>
-                    <LineChart
-                      key={this.state.textColor}
-                      textColor={this.state.textColor}
-                      colorScale={this.state.palettes.qualitative}
-                      seriesScale={12} />
+                    { this.state.theme == "lightTheme" ? (
+                      <LineChart
+                        key={this.state.textColor}
+                        textColor={this.state.textColor}
+                        colorScale={this.state.palettes.qualitative}
+                        seriesScale={12} />
+                    ) : (
+                      <LineChart
+                        key={this.state.textColor}
+                        textColor={this.state.textColor}
+                        colorScale={this.state.palettes.qualitative}
+                        seriesScale={10} />
+                    )}
                   </div>
                 </div>
 

@@ -411,6 +411,8 @@ class LineChart extends Component {
       displayData = data.slice(0, 3);
     } else if (this.state.seriesScale === 5) {
       displayData = data.slice(0, 5);
+    } else if (this.state.seriesScale === 10) {
+      displayData = data.slice(0, 10);
     } else if (this.state.seriesScale === 12) {
       displayData = data;
     }
