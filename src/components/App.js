@@ -26,9 +26,7 @@ class App extends Component {
       palettes: {
         qualitative: colors.lightTheme.qualitative,
         sequential: colors.lightTheme.sequential,
-        sequential2: colors.lightTheme.sequential2,
         diverging: colors.lightTheme.diverging,
-        diverging2: colors.lightTheme.diverging2,
         semantic: colors.lightTheme.semantic
       },
     };
@@ -88,19 +86,11 @@ class App extends Component {
 
                 <div className="row">
                   <div className="color chart-column col-12" style={{height: "330px"}}>
-                    { this.state.theme == "lightTheme" ? (
-                      <LineChart
-                        key={this.state.textColor}
-                        textColor={this.state.textColor}
-                        colorScale={this.state.palettes.qualitative}
-                        seriesScale={12} />
-                    ) : (
-                      <LineChart
-                        key={this.state.textColor}
-                        textColor={this.state.textColor}
-                        colorScale={this.state.palettes.qualitative}
-                        seriesScale={10} />
-                    )}
+                    <LineChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative}
+                      seriesScale={12} />
                   </div>
                 </div>
 
@@ -203,28 +193,6 @@ class App extends Component {
             </div>
             {/* Sequential */}
 
-            {/* Sequential Option 2 */}
-            <div className="mx-auto">
-              <h6 className="mt-10 mb-20 flex-grow-1">Sequential Option 2</h6>
-
-              <div class="charts container">
-
-                <div className="row">
-
-                  <div className="color chart-column col-12" style={{height: "330px"}}>
-                    <HeatmapChart
-                      key={this.state.textColor}
-                      textColor={this.state.textColor}
-                      colorScale={this.state.palettes.sequential2} />
-                  </div>
-                </div>
-
-              </div>
-
-              <hr />
-            </div>
-            {/* Sequential Option 2 */}
-
             {/* Diverging */}
             <div className="mx-auto">
               <h6 className="mt-10 mb-20 flex-grow-1">Diverging</h6>
@@ -253,35 +221,6 @@ class App extends Component {
               <hr />
             </div>
             {/* Diverging */}
-
-            {/* Diverging Option 2 */}
-            <div className="mx-auto">
-              <h6 className="mt-10 mb-20 flex-grow-1">Diverging Option 2</h6>
-
-              <div class="charts container">
-
-                <div className="row">
-                  <div className="color chart-column col-12" style={{height: "330px"}}>
-                    <HeatmapChart
-                      key={this.state.textColor}
-                      textColor={this.state.textColor}
-                      colorScale={this.state.palettes.diverging2} />
-                  </div>
-
-                  <div className="color chart-column col-12">
-                    <ScatterPlotChart
-                      key={this.state.textColor}
-                      textColor={this.state.textColor}
-                      colorScale={this.state.palettes.diverging2}
-                      seriesScale={this.state.seriesScale} />
-                  </div>
-                </div>
-
-              </div>
-
-              <hr />
-            </div>
-            {/* Diverging Option 2 */}
 
             {/* Semantic */}
             <div className="mx-auto">

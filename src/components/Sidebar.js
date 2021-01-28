@@ -14,9 +14,7 @@ const themeOptions = [
     palettes: {
       qualitative: colors.lightTheme.qualitative,
       sequential: colors.lightTheme.sequential,
-      sequential2: colors.lightTheme.sequential2,
       diverging: colors.lightTheme.diverging,
-      diverging2: colors.lightTheme.diverging2,
       semantic: colors.lightTheme.semantic
     },
     pageSettings: {
@@ -30,9 +28,7 @@ const themeOptions = [
     palettes: {
       qualitative: colors.darkTheme.qualitative,
       sequential: colors.darkTheme.sequential,
-      sequential2: colors.darkTheme.sequential2,
       diverging: colors.darkTheme.diverging,
-      diverging2: colors.darkTheme.diverging2,
       semantic: colors.darkTheme.semantic
     },
     pageSettings: {
