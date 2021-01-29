@@ -11,6 +11,7 @@ import ScatterPlotChart from './charts/ScatterPlotChart';
 import PieChart from './charts/PieChart';
 import RadarChart from './charts/RadarChart';
 import HeatmapChart from './charts/HeatmapChart';
+import ChoroplethChart from './charts/ChoroplethChart';
 
 const colors = require('./charts/ChartColors.js');
 
@@ -163,6 +164,16 @@ class App extends Component {
                       seriesScale={this.state.seriesScale} />
                   </div>
 
+                </div>
+
+                <div className="row">
+                  <div className="color chart-column col-12" style={{height: "400px"}}>
+                    <ChoroplethChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative}
+                      seriesScale={this.state.seriesScale} />
+                  </div>
                 </div>
 
               </div>
