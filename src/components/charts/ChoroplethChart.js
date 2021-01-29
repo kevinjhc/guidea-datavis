@@ -719,7 +719,7 @@ class ChoroplethChart extends Component {
       // colors="nivo"
       colors={this.state.colorScale}
       domain={[ 0, 1000000 ]}
-      unknownColor="#2E96FF"
+      unknownColor={this.state.colorScale[0]}
       label="properties.name"
       valueFormat=".2s"
       projectionTranslation={[ 0.5, 0.5 ]}

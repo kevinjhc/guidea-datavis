@@ -166,16 +166,6 @@ class App extends Component {
 
                 </div>
 
-                <div className="row">
-                  <div className="color chart-column col-12" style={{height: "400px"}}>
-                    <ChoroplethChart
-                      key={this.state.textColor}
-                      textColor={this.state.textColor}
-                      colorScale={this.state.palettes.qualitative}
-                      seriesScale={this.state.seriesScale} />
-                  </div>
-                </div>
-
               </div>
 
               <hr />
@@ -195,6 +185,16 @@ class App extends Component {
                       key={this.state.textColor}
                       textColor={this.state.textColor}
                       colorScale={this.state.palettes.sequential} />
+                  </div>
+                </div>
+
+                <div className="row">
+                  <div className="color chart-column col-12" style={{height: "400px"}}>
+                    <ChoroplethChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.sequential}
+                      seriesScale={this.state.seriesScale} />
                   </div>
                 </div>
 
