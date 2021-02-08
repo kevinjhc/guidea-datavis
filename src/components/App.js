@@ -26,6 +26,7 @@ class App extends Component {
       theme: "lightTheme",
       palettes: {
         qualitative: colors.lightTheme.qualitative,
+        qualitative2: colors.lightTheme.qualitative2,
         sequential: colors.lightTheme.sequential,
         diverging: colors.lightTheme.diverging,
         semantic: colors.lightTheme.semantic
@@ -81,7 +82,7 @@ class App extends Component {
 
             {/* Qualitative */}
             <div className="mx-auto">
-              <h6 className="mt-10 mb-20 flex-grow-1">Qualitative</h6>
+              <h6 className="mt-10 mb-20 flex-grow-1">Qualitative Order A</h6>
 
               <div class="charts container">
 
@@ -161,6 +162,99 @@ class App extends Component {
                       key={this.state.textColor}
                       textColor={this.state.textColor}
                       colorScale={this.state.palettes.qualitative}
+                      seriesScale={this.state.seriesScale} />
+                  </div>
+
+                </div>
+
+              </div>
+
+              <hr />
+            </div>
+            {/* Qualitative */}
+
+            {/* Qualitative */}
+            <div className="mx-auto">
+              <h6 className="mt-10 mb-20 flex-grow-1">Qualitative Order B</h6>
+
+              <div class="charts container">
+
+                <div className="row">
+                  <div className="color chart-column col-12" style={{height: "330px"}}>
+                    <LineChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative2}
+                      seriesScale={12} />
+                  </div>
+                </div>
+
+                <div className="row">
+                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                    <BarChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative2}
+                      seriesScale={this.state.seriesScale} />
+                  </div>
+
+                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                    <StackedBarChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative2}
+                      seriesScale={this.state.seriesScale} />
+                  </div>
+
+                  <div className="color chart-column col-12 col-lg-12 col-xl-4">
+                    <GroupedBarChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative2}
+                      seriesScale={this.state.seriesScale} />
+                  </div>
+                </div>
+
+                <div className="row">
+                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                    <LineChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative2}
+                      seriesScale={this.state.seriesScale} />
+                  </div>
+
+                  <div className="color chart-column col-12 col-lg-6 col-xl-4">
+                    <AreaChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative2}
+                      seriesScale={this.state.seriesScale} />
+                  </div>
+
+                  <div className="color chart-column col-12 col-lg-12 col-xl-4">
+                    <ScatterPlotChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative2}
+                      seriesScale={this.state.seriesScale} />
+                  </div>
+                </div>
+
+                <div className="row">
+                  <div className="color chart-column col-12 col-lg-12 col-xl-6">
+                    <PieChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative2}
+                      seriesScale={this.state.seriesScale} />
+                  </div>
+
+                  <div className="color chart-column col-12 col-lg-12 col-xl-6">
+                    <RadarChart
+                      key={this.state.textColor}
+                      textColor={this.state.textColor}
+                      colorScale={this.state.palettes.qualitative2}
                       seriesScale={this.state.seriesScale} />
                   </div>
 

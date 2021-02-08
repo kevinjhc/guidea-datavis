@@ -13,6 +13,7 @@ const themeOptions = [
     label: 'Light Theme',
     palettes: {
       qualitative: colors.lightTheme.qualitative,
+      qualitative2: colors.lightTheme.qualitative2,
       sequential: colors.lightTheme.sequential,
       diverging: colors.lightTheme.diverging,
       semantic: colors.lightTheme.semantic
@@ -27,6 +28,7 @@ const themeOptions = [
     label: 'Dark Theme',
     palettes: {
       qualitative: colors.darkTheme.qualitative,
+      qualitative2: colors.darkTheme.qualitative2,
       sequential: colors.darkTheme.sequential,
       diverging: colors.darkTheme.diverging,
       semantic: colors.darkTheme.semantic
